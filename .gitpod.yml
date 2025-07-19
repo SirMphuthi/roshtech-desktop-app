@@ -5,3 +5,8 @@ tasks:
   - name: Install & Start
     init: npm install
     command: npm start
+
+ports:
+  # This exposes the VNC port for the desktop view and opens it in a browser tab
+  - port: 6080
+    onOpen: open-browser
